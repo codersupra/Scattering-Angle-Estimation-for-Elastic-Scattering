@@ -10,52 +10,8 @@ Scattering experiments are central to studying quantum systems, providing insigh
 
 Traditional methods like Lüscher's method, the Busch formula, and the spherical-wall method are commonly used in classical computations to extract scattering phase shifts. However, these methods are often difficult to implement in quantum systems due to limitations in Euclidean-time simulations and the fermionic sign problem. In contrast, quantum computers operate in Minkowski-time, which offers potential advantages for calculating dynamic properties like scattering cross sections.
 
-In this project, we use the Busch formula to measure the energy shift of particles in a harmonic trap due to interaction. The phase shift is extracted from the energy calculation by applying the following equation for two particles in a trap:
+In this project, we use the Busch formula to measure the energy shift of particles in a harmonic trap due to interaction. The phase shift is extracted from the energy calculation using VQE.
 
-𝐸
-total
-=
-𝐸
-trap
-+
-𝐸
-interaction
-2
-E 
-total
-​
- = 
-2
-E 
-trap
-​
- +E 
-interaction
-​
- 
-​
- 
-Where:
-
-𝐸
-trap
-E 
-trap
-​
-  is the energy contribution from the harmonic trap.
-𝐸
-interaction
-E 
-interaction
-​
-  is the energy from particle interaction.
-The ground state energy 
-𝐸
-total
-E 
-total
-​
-  is calculated using VQE and the phase shift is related to this energy through the Busch formula.
 
 VQE and Relaxation Method
 The Variational Quantum Eigensolver (VQE) is a hybrid quantum-classical algorithm designed to find the ground state energy of quantum systems. The relaxation method is used in this project to iteratively improve the trial wave function. The VQE process involves:
